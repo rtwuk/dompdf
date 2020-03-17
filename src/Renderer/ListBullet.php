@@ -232,7 +232,7 @@ class ListBullet extends AbstractRenderer
                     $line = $li->get_containing_line();
                     list($x, $y) = [$frame->get_position("x"), $line->y];
 
-                    $x -= $this->_dompdf->getFontMetrics()->getTextWidth($text, $font_family, $font_size, $spacing);
+                    //$x -= $this->_dompdf->getFontMetrics()->getTextWidth($text, $font_family, $font_size, $spacing);
 
                     // Take line-height into account
                     // TODO: should the line height take into account the line height of the containing block (per previous logic)
